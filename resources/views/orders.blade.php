@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="{{ asset('css/overview.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/orders.css') }}">
     <title>garlic</title>
 </head>
 
@@ -38,7 +38,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
-                    <h2 class="fs-2 m-0">Overview</h2>
+                    <h2 class="fs-2 m-0">Orders</h2>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -66,36 +66,8 @@
 
             <div class="container-fluid px-4">
                 <div class="row g-3 my-2">
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">0</h3>
-                                <p class="fs-5">Total Orders</p>
-                            </div>
-                            <i class="bi bi-clipboard"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">0</h3>
-                                <p class="fs-5">Total shipment</p>
-                            </div>
-                            <i
-                                class=""></i>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
-                            <div>
-                                <h3 class="fs-2">0</h3>
-                                <p class="fs-5">Total customers</p>
-                            </div>
-                            <i class=""></i>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
 
                 <div class="row my-5">

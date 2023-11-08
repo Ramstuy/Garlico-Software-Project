@@ -1,0 +1,89 @@
+.transparent-navbar {
+    background: transparent !important;
+}  
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha (4th value) for the level of transparency */
+  }
+
+/* CSS to add a single separator line between "Hey, Wadap" and "Logout" */
+.dropdown-menu li:first-child::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
+    margin: 5px 0; /* Adjust the margin to control the spacing */
+}
+
+/* CSS to make "Hey, Wadap" unclickable */
+.dropdown-menu li:first-child a.dropdown-item {
+    pointer-events: none;
+}
+
+/* CSS to resize the text in the dropdown menu */
+.dropdown-menu li a.dropdown-item {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.nav-link {
+    color: #FFF;
+font-family:Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+.dropdown-item {
+    color: #FFF;
+    font-family:Poppins;
+}
+
+.firstbg {
+    position: relative;
+    height: 100vh;
+    background-color: lightslategray;
+    overflow: hidden;
+}
+
+.firstbg img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.firstcontent {
+    z-index: 1;
+}
+
+.firstle {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Cinzel;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.firstpar {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 50%;
+}
+
+.firstbtn {
+    color: #000;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

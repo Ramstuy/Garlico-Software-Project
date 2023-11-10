@@ -44,6 +44,11 @@ line-height: normal;
     background-color: lightslategray;
     overflow: hidden;
 }
+.formbg {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 
 .firstbg img {
     position: absolute;
@@ -86,4 +91,9 @@ line-height: normal;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.formbg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

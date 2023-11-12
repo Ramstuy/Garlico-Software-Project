@@ -97,3 +97,13 @@ line-height: normal;
     justify-content: center;
     align-items: center;
 }
+.container {
+    width: 100%;
+}
+.card {
+    border-radius: 15px;
+    background: #D0C9C012;
+    box-shadow: none;
+    width: 450px; /* Sesuaikan dengan lebar yang diinginkan */
+    max-width: 10000px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+}

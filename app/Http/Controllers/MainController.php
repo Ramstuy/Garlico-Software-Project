@@ -14,5 +14,13 @@ class MainController extends Controller
         return view ('home');
         
     }
+    function register()  {
+        return view ('registerform');
+        
+    }
+    function login()  {
+        return view ('loginform');
+        
+    }
 }
 

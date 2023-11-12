@@ -9,10 +9,6 @@
                         <div class="card" > <!-- Sesuaikan nilai width dan max-width -->
                             <div class="card-body p-5">
                                 <form class="text-white"> 
-                                    <div class="form-group mb-4">
-                                    <label for="form3Example1cg">Email</label>
-                                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
-                                </div>
                             
                                 <div class="form-group mb-4">
                                     <label for="form3Example3cg">Username</label>
@@ -23,18 +19,14 @@
                                     <label for="form3Example4cg">Password</label>
                                     <input type="password" id="form3Example4cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                 </div>
-                            
-                                <div class="form-group mb-4">
-                                    <label for="form3Example4cdg">Confirm password</label>
-                                    <input type="password" id="form3Example4cdg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
-                                </div>
-                            
+
                                 <div class="d-flex justify-content-center mb-4">
-                                  <button type="button" class="btn btn-success btn-lg gradient-custom-4 text-body" style="background-color: #2E2E2E; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important;">Sign Up</button>
+                                    <button type="button" class="btn btn-success btn-lg gradient-custom-4 text-body" style="background-color: #2E2E2E; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important;">Login</button>
+                              
+                                  </div>
                             
-                                </div>
-                            
-                                <p class="text-center text-muted mt-3 mb-0" style="color: white !important;">Already have an account? <a href="#!" class="fw-bold text-body" style="color: white !important;"><u>Login in</u></a></p>
+                              
+                                <p class="text-center text-muted mt-3 mb-0" style="color: white !important;">Don't have an account? <a href="#!" class="fw-bold text-body" style="color: white !important;"><u>Sign Up</u></a></p>
                             </form>
                             </div>
                         </div>

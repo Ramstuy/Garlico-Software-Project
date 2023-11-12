@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg transparent-navbar fixed-top">
-
+  <div class="container">
     <a class="navbar-brand" href="#">
       <img src="https://c.animaapp.com/OU2pd5a9/img/bawang-ireng-lanang-1@2x.png" alt="Bootstrap" width="30%" height="30%">
     </a>
@@ -23,7 +23,7 @@
             <img src="https://c.animaapp.com/OU2pd5a9/img/user@2x.png" alt="Bootstrap" width="25%" height="25%"/>
         </a>
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Hey, Wadap</a></li>
+            <li><a class="dropdown-item" href="#">Hey, User</a></li>
             <li>
                 <a class="dropdown-item" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">

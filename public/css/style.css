@@ -11,7 +11,7 @@
     content: "";
     display: block;
     border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
-    margin: 5px 0; /* Adjust the margin to control the spacing */
+    margin: 5px 15px; /* Adjust the margin to control the spacing, here 10px on left and right */
 }
 
 /* CSS to make "Hey, Wadap" unclickable */
@@ -36,6 +36,22 @@ line-height: normal;
 .dropdown-item {
     color: #FFF;
     font-family:Poppins;
+}
+
+.logout-icon {
+    width: 1em; /* or adjust the size as needed */
+    height: 1em; /* or adjust the size as needed */
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+    margin-right: 5px; /* Adjust the margin as needed for the desired spacing */
+}
+.modal-body {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .firstbg {
@@ -107,3 +123,41 @@ line-height: normal;
     width: 450px; /* Sesuaikan dengan lebar yang diinginkan */
     max-width: 10000px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
 }
+
+.whatsapp-link {/* Your desired color */
+    color: white;
+    text-decoration: none; /* Removes the underline */
+  }
+
+.bg-glass {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the opacity as needed */
+    border-radius: 10px; /* Add border-radius for a rounded effect */
+  }
+  
+  
+  /* Remove border from the modal header */
+  .modal-header {
+    border: none;
+  }
+  /* Adjust space between text and buttons in the modal body */
+/* Adjust padding in the modal body */
+.modal-body {
+    padding-bottom: 2rem; /* Increase padding to create space */
+  }
+  /* Keep the modal at the top */
+  .modal-top {
+    margin-top: 10vh; /* Adjust the top margin as needed */
+  }
+  
+  /* Adjust the spacing around buttons */
+  .modal-footer button {
+    margin: 0; /* Reset button margins */
+  }
+  
+  .modal-footer .btn-dark {
+    margin-right: 10px; /* Adjust the margin between buttons */
+  }
+  
+  
+  
+  

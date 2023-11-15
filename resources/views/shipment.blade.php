@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="shipment.css" />
+    <link rel="stylesheet" href="/css/shipment.css" />
     <title>garlic</title>
 </head>
 
@@ -20,12 +20,12 @@
     </div>
 
             <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+                <a href="/dashoverview" class="list-group-item list-group-item-action bg-transparent second-text active">
                     <img src="https://i.ibb.co/qyGCP5v/dashboard-Copy.png" width="30">Overview
                   </a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><img src="https://i.ibb.co/YWYRLz1/clipboard-Copy.png" width="30">Orders</a>
+                <a href="/dashorders" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><img src="https://i.ibb.co/YWYRLz1/clipboard-Copy.png" width="30">Orders</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><img src="https://i.ibb.co/562hzDZ/delivery-Copy.png" width="30">Shipment</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><img src="https://i.ibb.co/9pCprZf/teamwork-Copy.png" width="30">Client</a>
+                <a href="/dashclient" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><img src="https://i.ibb.co/9pCprZf/teamwork-Copy.png" width="30">Client</a>
                 
                 <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
@@ -60,36 +60,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($customers as $customer)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <th scope="row">{{ $customer->id }}</th>
+                                    <td>{{ $customer->customer_name }}</td>
+                                    <td>3</td>
+                                    <td>Paid</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                                @endforeach
                               
                             
                             </tbody>

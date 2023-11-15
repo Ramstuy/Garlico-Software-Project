@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title></title>
-  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="/css/login.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
@@ -27,7 +27,7 @@
                         <input type="submit" value="login" name="">
                     </div>
                     <div class="inputbox">
-                        <p> Forgot your password?<a href="#"></a></p>
+                        <p>Don't have an account?<a href="/adminregister">Sign up</a></p>
                     </div>
                 </form>
         </div>

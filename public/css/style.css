@@ -11,7 +11,7 @@
     content: "";
     display: block;
     border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
-    margin: 5px 15px; /* Adjust the margin to control the spacing, here 10px on left and right */
+    margin: 5px 0; /* Adjust the margin to control the spacing */
 }
 
 /* CSS to make "Hey, Wadap" unclickable */
@@ -38,28 +38,43 @@ line-height: normal;
     font-family:Poppins;
 }
 
-.logout-icon {
-    width: 1em; /* or adjust the size as needed */
-    height: 1em; /* or adjust the size as needed */
-    vertical-align: middle;
-    filter: brightness(0) invert(1);
-    margin-right: 5px; /* Adjust the margin as needed for the desired spacing */
-}
-.modal-body {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 15px;    
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 .firstbg {
     position: relative;
     height: 100vh;
     background-color: lightslategray;
     overflow: hidden;
 }
+.secondbg{
+    position: relative;
+    height: 200vh;
+    background-color: #eeeeee;
+    overflow: hidden;
+
+}
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 99.5vh;
+    background-color: #AAA492;
+  }
+
+  .image-container{
+    margin-left: -12px;
+  }
+  .text-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .image-container img {
+    width: 100vh;
+    height: 99.5vh;
+    margin-right: 3050px;
+    margin-left: 0px;
+  }
+
 .formbg {
     position: relative;
     height: 100vh;
@@ -74,13 +89,20 @@ line-height: normal;
     height: auto;
     object-fit: cover;
 }
-
+.secondbg img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 296px;
+    height: 344px;
+}
 .firstcontent {
     z-index: 1;
 }
 
 .firstle {
-    color: #FFF;
+    color: white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Cinzel;
     font-size: 40px;
@@ -88,7 +110,6 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
 }
-
 .firstpar {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -99,6 +120,20 @@ line-height: normal;
     line-height: normal;
     max-width: 50%;
 }
+.thirdpar{
+    margin-top: 50px;
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    
+}
+.thirdle{
+    color: white;
+font-size: 40px;
+font-family: Cinzel;
+font-weight: 700;
+word-wrap: break-word
+}
 
 .firstbtn {
     color: #000;
@@ -108,6 +143,40 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
 }
+.secondle {
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Cinzel;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center; /* Teks diatur ke tengah */
+    margin-bottom: 90px;
+}
+
+.secondpar {
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Source Sans Pro-Light", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    max-width: 80%; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+    margin: 0 auto; /* Menengahkan teks secara horizontal */
+    column-count: 0; /* Membagi teks menjadi 2 kolom */
+  
+}
+/* Untuk membatasi jumlah paragraf */
+.secondpar::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
 .formbg {
     display: flex;
     justify-content: center;
@@ -116,48 +185,275 @@ line-height: normal;
 .container {
     width: 100%;
 }
-.card {
-    border-radius: 15px;
-    background: #D0C9C012;
-    box-shadow: none;
-    width: 450px; /* Sesuaikan dengan lebar yang diinginkan */
-    max-width: 10000px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+.card-group {
+    margin-top: -450px; /* Menurunkan grup kartu agar lebih dekat dengan teks */
 }
 
-.whatsapp-link {/* Your desired color */
-    color: white;
-    text-decoration: none; /* Removes the underline */
-  }
+.card {
+    position: relative;
+    border-radius: 20px;
+    background: #D0C9C012;
+    box-shadow: none;
+    width: 150px; 
+    height: 430px;
+    margin: 0px 80px 200px 100px; 
 
-.bg-glass {
-    background-color: rgba(255, 255, 255, 0.2); /* Adjust the opacity as needed */
-    border-radius: 10px; /* Add border-radius for a rounded effect */
+}
+
+
+.card-img-top {
+    border-bottom:2px solid #ACACAC;
+    content: "";
+    display: block;
+    width: 130px;
+    height: 120px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.card-body {
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Menempatkan teks di bagian atas kartu */
+    text-align: center;
+}
+.card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid #ACACAC; /* You can adjust the color and thickness as needed */
+}
+.card-img-top::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px; /* Adjust this value to move the border slightly further below the image */
+    width: 120%; /* Make the border slightly longer than the image */
+    height: 2px;
+    background-color: #ACACAC; /* You can adjust the color */
+    display: block;
+}
+.footer {
+    background-color: #414141;
+    width: 100%;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
   }
   
   
-  /* Remove border from the modal header */
-  .modal-header {
-    border: none;
-  }
-  /* Adjust space between text and buttons in the modal body */
-/* Adjust padding in the modal body */
-.modal-body {
-    padding-bottom: 2rem; /* Increase padding to create space */
-  }
-  /* Keep the modal at the top */
-  .modal-top {
-    margin-top: 10vh; /* Adjust the top margin as needed */
+  /* footer left*/
+  
+  .footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
   }
   
-  /* Adjust the spacing around buttons */
-  .modal-footer button {
-    margin: 0; /* Reset button margins */
+  .footer .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
   }
   
-  .modal-footer .btn-dark {
-    margin-right: 10px; /* Adjust the margin between buttons */
+  .footer .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer .icons {
+    margin-top: 0px;
+    padding-right: 100px;
+  }
+  
+  .footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
   }
   
   
+  /* footer center*/
+  
+  .footer .footer-center {
+    width: 30%;
+  }
+  
+  .footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer .footer-center p a {
+    color: #0099ff;
+    text-decoration: none;
+  }
   
   
+  /* footer right*/
+  
+  .footer .footer-right {
+    width: 35%;
+  }
+  
+  .footer h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer h2 span {
+    color: #0099ff;
+  }
+  
+  .footer .menu {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer .menu a:hover {
+    color: #0099ff;
+  }
+  .footer .name0 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    padding-top: 35px;
+    padding-left: 10px;
+    font-family: Cinzel;
+  }
+  .footer .name {
+    color: #92989F;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 100px;
+    padding-left: 35px;
+    font-family: Jost;
+  }
+  .footer .name2 {
+    color: white;
+    font-family: Assistant;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 55px;
+  }
+  .footer .name3 {
+    font-family: Assistant;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top:15px;
+  }
+  .footer .name4 {
+    font-family: Assistant;
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 20px;
+    opacity: 0.7;
+
+  }
+  
+  @media (max-width: 767px) {
+    .footer {
+      font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+  }
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right div {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    margin-right: 15px; /* Adjust the margin as needed */
+    margin-top: 45px;
+}
+.icon-container2 {
+    margin-right: 15px; /* Adjust the margin as needed */
+    margin-top: 0px;
+}
+
+.footer-right svg {
+    fill: white;
+}
+

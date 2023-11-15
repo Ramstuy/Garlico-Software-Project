@@ -17,4 +17,5 @@ use App\Http\Controllers\MainController;
 Route::get('/', [MainController::class, 'index']);
 Route::get('/user', [MainController::class, 'signup']);
 Route::get('/regist', [MainController::class, 'register']);
-Route::get('/loginform', [MainController::class, 'login']);
+Route::get('/loginform', [MainControllesr::class, 'login']);
+Route::get('/arya', [MainController::class, 'ship']);

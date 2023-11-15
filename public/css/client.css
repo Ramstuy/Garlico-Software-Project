@@ -2,24 +2,7 @@
   --main-bg-color: #fff;
   --main-text-color: #fff;
   --second-text-color: #bbbec5;
-  --second-bg-color: #c1efde;
-}
-.p-3 .d-flex > div:first-child {
-  margin-right: 10px; /* Sesuaikan margin kanan gambar jika perlu */
-}
-#page-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; 
-}
-
-.container-fluid {
-  flex: 1; /* Mengisi ruang yang tersisa di dalam page content */
-  overflow-y: auto; /* Memberikan scrollbar jika konten melebihi tinggi viewport */
-}
-
-.table {
-  width: 96%; /* Mengisi lebar table sesuai container parentnya */
+  --second-bg-color: #EFEAD8;
 }
 
 .primary-text {
@@ -65,12 +48,8 @@
 }
 
 #sidebar-wrapper .sidebar-heading {
-  padding: 0.800rem 1.25rem;
-  font-size: 1rem;
-  text-align: center;
-  display: flex;
-  margin: 10px 0 0 10px;
-  
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
 }
 
 #sidebar-wrapper .list-group {
@@ -92,10 +71,6 @@
 .list-group-item {
   border: none;
   padding: 20px 30px;
-
-}
-.list-group-item img {
-  margin-right: 10px;
 }
 
 .list-group-item.active {
@@ -106,12 +81,7 @@
 }
 
 .table-extend {
-  height: 60vh;
-  margin: 0px 25px !important;
-}
-
-.table {
-  width: 100%;
+  height: 80vh;
 }
 
 @media (min-width: 768px) {

@@ -18,3 +18,4 @@ Route::get('/', [MainController::class, 'index']);
 Route::get('/user', [MainController::class, 'signup']);
 Route::get('/regist', [MainController::class, 'register']);
 Route::get('/loginform', [MainController::class, 'login']);
+Route::get('/shipment', [MainController::class, 'ship']);

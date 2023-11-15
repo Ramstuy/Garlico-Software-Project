@@ -22,5 +22,8 @@ class MainController extends Controller
         return view ('loginform');
         
     }
+    function ship()  {
+        return view ('shipment');
+    }
 }
 

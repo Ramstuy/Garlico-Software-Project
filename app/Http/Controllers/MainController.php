@@ -24,8 +24,6 @@ class MainController extends Controller
     }
     function ship()  {
         return view ('shipment');
-        
     }
-    
 }
 

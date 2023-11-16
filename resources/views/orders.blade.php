@@ -57,56 +57,21 @@
                         <table class="table bg-white rounded shadow-sm table-hover mx-auto text-center">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="50">NO</th>
-                                    <th scope="col">Customer Number</th>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">Customer Name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone Number</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($customers as $customer)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <th scope="row">{{ $customer->id }}</th>
+                                    <td>{{ $customer->customer_name }}</td>
+                                    <td>{{ $customer->customer_email }}</td>
+                                    <td>{{ $customer->phone_number }}</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">7</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                              
+                                @endforeach
                             
                             </tbody>
                         </table>

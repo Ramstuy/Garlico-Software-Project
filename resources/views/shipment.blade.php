@@ -53,23 +53,24 @@
                         <table class="table bg-white rounded shadow-sm  table-hover mx-auto text-center">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="50">NO</th>
-                                    <th scope="col">Customer Number</th>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">Customer Name</th>
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach($customers as $customer)
-                                <tr>
-                                    <th scope="row">{{ $customer->id }}</th>
-                                    <td>{{ $customer->customer_name }}</td>
-                                    <td>3</td>
-                                    <td>Paid</td>
-                                </tr>
+                                    <tr>
+                                        <th>{{ $customer->id }}</th>
+                                        <td>{{ $customer->customer_name }}</td>
+                                            @foreach($customer->orders as $order)
+                                                <td>{{ $order->quantity_ordered }}</td>
+                                                <td>{{ $order->is_paid ? 'Paid' : 'Not Paid' }}</td>
+                                            @endforeach
+                                    </tr>
                                 @endforeach
-                              
-                            
+
                             </tbody>
                         </table>
                     </div>

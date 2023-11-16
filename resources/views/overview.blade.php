@@ -59,8 +59,11 @@
                                 <img src="https://i.ibb.co/YWYRLz1/clipboard-Copy.png" width="28" style="vertical-align: middle;">
                                 <div class="ms-3">
                                     <p class="fs-5 mb-0">Total Orders</p>
-                                    <h3 class="fs-2">0</h3>
+                                    <h3 class="fs-2">
+                                        {{ $totalQuantityOrdered }}
+                                    </h3>
                                 </div>
+                                
                             </div>
                         </div>
                 
@@ -95,7 +98,7 @@
                         <table class="table bg-white rounded shadow-sm table-hover text-center">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="60">NO</th>
+                                    <th scope="col">No.</th>
                                     <th scope="col">Customer Name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone Number</th>
@@ -104,13 +107,12 @@
                             <tbody>
                                 @foreach($customers as $customer)
                                 <tr>
-                                    <th scope="row">{{ $customer->id }}</th>
+                                    <th>{{ $customer->id }}</th>
                                     <td>{{ $customer->customer_name }}</td>
                                     <td>{{ $customer->customer_email }}</td>
                                     <td>{{ $customer->phone_number }}</td>
                                 </tr>
                                 @endforeach
-                            
                             </tbody>
                         </table>
                 </div>

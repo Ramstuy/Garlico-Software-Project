@@ -11,17 +11,23 @@ class DashboardController extends Controller
 {
     function overview()  {
         $customers = Customer::all();
-        // dd($customers);
-        return view ('overview', compact('customers'));
+    
+    // Calculate the total quantity ordered across all customers
+    $totalQuantityOrdered = $customers->flatMap->orders->sum('quantity_ordered');
+
+    return view('overview', compact('customers', 'totalQuantityOrdered'));
     }
     function orders()  {
-        return view ('orders');
+        $customers = Customer::all();
+        return view ('orders', compact('customers'));
     }
-    function shipment()  {
+    function shipment()
+    {
         $customers = Customer::with('orders')->get();
-        return view ('shipment', compact('customers'));
+        return view('shipment', compact('customers'));
     }
     function client()  {
-        return view ('client');
+        $customers = Customer::all();
+        return view ('client', compact('customers'));
     }
 }

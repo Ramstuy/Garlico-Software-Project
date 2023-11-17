@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="client.css" />
+    <link rel="stylesheet" href="/css/client.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>garlic</title>
 </head>
@@ -20,9 +20,9 @@
                 <img src="https://c.animaapp.com/OU2pd5a9/img/bawang-ireng-lanang-1@2x.png" width="35" alt="Deskripsi gambar">Garlico
             </div>
             <div class="list-group list-group-flush my-3">
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active"><i class="bi bi-columns"></i>Overview</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="bi bi-clipboard2-check"></i>Orders</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="/dashoverview" class="list-group-item list-group-item-action bg-transparent second-text active"><i class="bi bi-columns"></i>Overview</a>
+                <a href="/dashorders" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="bi bi-clipboard2-check"></i>Orders</a>
+                <a href="/dashshipment" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="bi bi-truck"></i>Shipment</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="bi bi-people"></i>  Client</a>
                 
@@ -57,46 +57,22 @@
                         <table class="table bg-white rounded shadow-sm  table-hover mx-auto text-center">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="90">User ID</th>
-                                    <th scope="col">Customer Name</th>
+                                    <th scope="col" width="90">No.</th>
+                                    <th scope="col">User ID</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone Number</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach($customers as $customer)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <th scope="row">{{ $loop->iteration }}</th>
+                                    <td>{{ $customer->id }}</td>
+                                    <td>{{ $customer->customer_email }}</td>
+                                    <td>{{ $customer->phone_number }}</td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                              
-                            
-                            </tbody>
+                                @endforeach
+                            </tbody>                            
                         </table>
                     </div>
                 </div>

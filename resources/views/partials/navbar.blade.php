@@ -13,23 +13,22 @@
       </li>
       <li class="nav-item mx-2">
         <a class="nav-link" href="#staticBackdrop"  data-bs-toggle="modal">Contact</a>
-    </li>           
+    </li>
       <li class="nav-item mx-2">
         <a class="nav-link" href="#">Buy Now</a>
         <i class="bi bi-box-arrow-right"></i>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            <img src="https://c.animaapp.com/OU2pd5a9/img/user@2x.png" alt="Bootstrap" width="25%" height="25%"/>
+            <img src="https://c.animaapp.com/OU2pd5a9/img/user@2x.png" alt="Bootstrap" width="25%" height="50%"/>
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Hey, User</a></li>
-          <li>
-              <a class="dropdown-item" href="#"><img class="logout-icon" src="https://i.ibb.co/VQp2hM5/logout-Copy.png" alt="logout-Copy" border="0">Logout</a>
+            <li><a class="dropdown-item" href="#">Hey, Wadap</a></li>
+            <li>
+              <a class="dropdown-item" href="#"><img class="logout-icon" src="https://i.ibb.co/VQp2hM5/logout-Copy.png" alt="logout-Copy">Logout</a>
           </li>
-      </ul>      
+        </ul>
     </li>
-    
-  </div>
 
+  </div>
 </nav>

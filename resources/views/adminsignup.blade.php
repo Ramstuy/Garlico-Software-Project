@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title></title>
-  <link rel="stylesheet" href="signup.css" />
+  <link rel="stylesheet" href="/css/signup.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
@@ -30,7 +30,7 @@
                         <input type="submit" value="Sign Up" name="">
                     </div>
                     <div class="inputbox">
-                        <p> Already have an account? <a href="#">Login in</a></p>
+                        <p> Already have an account? <a href="/adminlogin">Login in</a></p>
                     </div>
                 </form>
         </div>

@@ -11,7 +11,7 @@
     content: "";
     display: block;
     border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
-    margin: 5px 0; /* Adjust the margin to control the spacing */
+    margin: 5px 15px; /* Adjust the margin to control the spacing, here 10px on left and right */
 }
 
 /* CSS to make "Hey, Wadap" unclickable */
@@ -36,6 +36,22 @@ line-height: normal;
 .dropdown-item {
     color: #FFF;
     font-family:Poppins;
+}
+
+.logout-icon {
+    width: 1em; /* or adjust the size as needed */
+    height: 1em; /* or adjust the size as needed */
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+    margin-right: 5px; /* Adjust the margin as needed for the desired spacing */
+}
+.modal-body {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .firstbg {
@@ -197,7 +213,31 @@ word-wrap: break-word
     width: 150px; 
     height: 430px;
     margin: 0px 80px 200px 100px; 
+}
+.kards{
+  border-radius: 15px; 
+  background: #D0C9C012; 
+  box-shadow: none;
+  width: 400px;
+  height: auto;
+  flex-shrink: 0;
+}
 
+.kards2{
+  border-radius: 30px; 
+  background: #D0C9C012; 
+  box-shadow: none;
+  width: 450px;
+  height: auto;
+  flex-shrink: 0;
+}
+.kards3{
+  border-radius: 30px; 
+  background: #D0C9C012; 
+  box-shadow: none;
+  width: 450px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 

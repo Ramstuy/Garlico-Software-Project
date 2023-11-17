@@ -15,8 +15,20 @@
   </head>
   @yield('stylesheet')
   <body>
+    <style>
+      body {
+            overflow-x: hidden; 
+        }
+
+        .scroll-container {
+            overflow-y: scroll;
+            overscroll-behavior-y: none; 
+        }
+    </style>
     
     @include('partials.navbar')
+    
+    <div class="scroll-container">
     
     @yield('container')
 

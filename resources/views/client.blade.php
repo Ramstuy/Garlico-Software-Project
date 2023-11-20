@@ -65,8 +65,6 @@
             </nav>
 
             <div class="container-fluid px-4">
-            
-
                 <div class="row my-5">
                     
                     <div class="table-extend radius bg-white px-0 mx-4 col">

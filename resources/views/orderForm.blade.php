@@ -6,7 +6,7 @@
             <div class="container h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="card" > <!-- Sesuaikan nilai width dan max-width -->
+                        <div class="kards3" >
                             <div class="card-body p-5">
                                 <form class="text-white">
                                     <div class="form-group mb-4">

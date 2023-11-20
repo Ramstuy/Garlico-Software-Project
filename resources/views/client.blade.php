@@ -9,27 +9,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="/css/client.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>garlic</title>
 </head>
 
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <div class="bg-black" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-3 primary-text fs-3 fw-bold text-uppercase border-bottom" style="text-align: left;">
-                <img src="https://c.animaapp.com/OU2pd5a9/img/bawang-ireng-lanang-1@2x.png" width="35" alt="Deskripsi gambar">Garlico
-            </div>
-            <div class="list-group list-group-flush my-3">
-                <a href="/dashoverview" class="list-group-item list-group-item-action bg-transparent second-text active"><i class="bi bi-columns"></i>Overview</a>
-                <a href="/dashorders" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="bi bi-clipboard2-check"></i>Orders</a>
-                <a href="/dashshipment" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                        class="bi bi-truck"></i>Shipment</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i class="bi bi-people"></i>  Client</a>
-                
-                <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
-                        class="fas fa-power-off me-2"></i>Logout</a>
-            </div>
-        </div>
+        <div class="bg-black" id="sidebar-wrapper" style="display: flex; flex-direction: column; height: 100%;">
+    <div class="sidebar-heading text-center py-3 primary-text fs-3 fw-bold border-bottom" style="text-align: left;">
+        <img src="https://c.animaapp.com/OU2pd5a9/img/bawang-ireng-lanang-1@2x.png" width="65" alt="Deskripsi gambar" style="margin-right: 22px"><div style="color: #ACACAC; display: flex;"><p style="margin-bottom: 0; margin-top: 18px">Garlico</p></div>
+    </div> 
+
+    <div class="list-group list-group-flush my-3">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+            <img src="https://i.ibb.co/qyGCP5v/dashboard-Copy.png" width="30" style="margin-right: 30px">Overview
+        </a>
+        <a href="/dashorders" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <img src="https://i.ibb.co/YWYRLz1/clipboard-Copy.png" width="30" style="margin-right: 30px">Orders
+        </a>
+        <a href="/dashshipment" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <img src="https://i.ibb.co/562hzDZ/delivery-Copy.png" width="30" style="margin-right: 30px">Shipment
+        </a>
+        <a href="/dashclient" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+            <img src="https://i.ibb.co/9pCprZf/teamwork-Copy.png" width="30" style="margin-right: 30px">Client
+        </a>
+    </div>
+
+    <div class="sidebar-heading text-center py-3 primary-text fs-3 fw-bold text-uppercase border-bottom" style="text-align: left;"></div> 
+
+    <div class="logout mt-auto">
+        <a href="#" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold">
+            <i class="fas fa-power-off me-2"></i>Logout
+        </a>
+    </div>
+</div>
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
@@ -53,8 +69,8 @@
 
                 <div class="row my-5">
                     
-                    <div class="table-extend bg-white px-0 mx-4 col">
-                        <table class="table bg-white rounded shadow-sm  table-hover mx-auto text-center">
+                    <div class="table-extend radius bg-white px-0 mx-4 col">
+                        <table class="table radius bg-white rounded shadow-sm  table-hover mx-auto text-center">
                             <thead>
                                 <tr>
                                     <th scope="col" width="90">No.</th>

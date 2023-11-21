@@ -7,6 +7,7 @@
 .p-3 .d-flex > div:first-child {
   margin-right: 10px; /* Sesuaikan margin kanan gambar jika perlu */
 }
+
 #page-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -57,11 +58,14 @@
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
+  width: 60vh;
   -webkit-transition: margin 0.25s ease-out;
   -moz-transition: margin 0.25s ease-out;
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
   background: #1B262C;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.7px;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -70,7 +74,10 @@
   text-align: center;
   display: flex;
   margin: 10px 0 0 10px;
-  
+}
+
+.logout {
+  align-items: end;
 }
 
 #sidebar-wrapper .list-group {
@@ -112,6 +119,10 @@
 
 .table {
   width: 100%;
+}
+
+.radius {
+  border-radius: 20px !important;
 }
 
 @media (min-width: 768px) {

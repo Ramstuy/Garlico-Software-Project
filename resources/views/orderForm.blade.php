@@ -10,27 +10,27 @@
                             <div class="card-body p-5">
                                 <form class="text-white">
                                     <div class="form-group mb-4">
-                                        <label for="form3Example1cg">Full Name</label>
+                                        <label for="form3Example1cg"style="display: block; text-align: left;">Full Name</label>
                                         <input type="text" id="form3Example1cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
                                 
                                     <div class="form-group mb-4">
-                                        <label for="form3Example3cg">Phone Number</label>
+                                        <label for="form3Example3cg"style="display: block; text-align: left;">Phone Number</label>
                                         <input type="email" id="form3Example3cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
                                 
                                     <div class="form-group mb-4">
-                                        <label for="form3Example4cg">Email</label>
+                                        <label for="form3Example4cg"style="display: block; text-align: left;">Email</label>
                                         <input type="password" id="form3Example4cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
                                 
                                     <div class="form-group mb-4">
-                                        <label for="form3Example4cdg">Address</label>
+                                        <label for="form3Example4cdg"style="display: block; text-align: left;">Address</label>
                                         <input type="password" id="form3Example4cdg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
 
                                     <div class="form-group mb-4">
-                                        <label for="form3Example4cdg">Quantity</label>
+                                        <label for="form3Example4cdg"style="display: block; text-align: left;">Quantity</label>
                                         <input type="password" id="form3Example4cdg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
 

@@ -10,22 +10,22 @@
                             <div class="card-body p-5">
                                 <form class="text-white">
                                     <div class="form-group mb-4">
-                                        <label for="form3Example1cg">Email</label>
+                                        <label for="form3Example1cg"style="display: block; text-align: left;">Email</label>
                                         <input type="text" id="form3Example1cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
 
                                     <div class="form-group mb-4">
-                                        <label for="form3Example3cg">Username</label>
+                                        <label for="form3Example3cg"style="display: block; text-align: left;">Username</label>
                                         <input type="email" id="form3Example3cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
 
                                     <div class="form-group mb-4">
-                                        <label for="form3Example4cg">Password</label>
+                                        <label for="form3Example4cg"style="display: block; text-align: left;">Password</label>
                                         <input type="password" id="form3Example4cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
 
                                     <div class="form-group mb-4">
-                                        <label for="form3Example4cdg">Confirm password</label>
+                                        <label for="form3Example4cdg"style="display: block; text-align: left;">Confirm password</label>
                                         <input type="password" id="form3Example4cdg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
                                     </div>
 

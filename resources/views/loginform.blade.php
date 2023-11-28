@@ -6,19 +6,19 @@
             <div class="container h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="kards" >
-                            <div class="card-body p-5">
-                                <form class="text-white"> 
-                            
-                                <div class="form-group mb-4">
-                                    <label for="form3Example3cg">Username</label>
-                                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
-                                </div>
-                            
-                                <div class="form-group mb-4">
-                                    <label for="form3Example4cg">Password</label>
-                                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
-                                </div>
+                            <div class="kards" >
+                                <div class="card-body p-5">
+                                    <form class="text-white"> 
+                                
+                                    <div class="form-group mb-4">
+                                        <label for="form3Example3cg" style="display: block; text-align: left;">Username</label>
+                                        <input type="email" id="form3Example3cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
+                                    </div>
+                                
+                                    <div class="form-group mb-4">
+                                        <label for="form3Example4cg"style="display: block; text-align: left;">Password</label>
+                                        <input type="password" id="form3Example4cg" class="form-control form-control-lg" style="background-color: rgba(255, 255, 255, 0.2);  color: white; border: none;" />
+                                    </div>
 
                                 <div class="d-flex justify-content-center mb-4">
                                     <button type="button" class="btn btn-success btn-lg gradient-custom-4 text-body" style="background-color: #2E2E2E; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important;">Login</button>

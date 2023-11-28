@@ -122,3 +122,14 @@
   width: 100%;
   overflow-x: auto;
 }
+.white-image {
+  filter: brightness(0) invert(1);
+}
+
+.logout-icon {
+  width: 1em; /* or adjust the size as needed */
+  height: 1em; /* or adjust the size as needed */
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+  margin-right: 5px; /* Adjust the margin as needed for the desired spacing */
+}

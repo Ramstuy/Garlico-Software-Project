@@ -28,9 +28,12 @@ Route::get('/dashclient', [DashboardController::class, 'client']);
 Route::get('/customerorder', [MainController::class, 'customerOrder']);
 
 Route::get('/adminregister', [RegisterController::class, 'adminRegister']);
-Route::get('/userregister', [RegisterController::class, 'userRegister']);
+Route::post('/adminregister', [RegisterController::class, 'adminStore']);
 
 Route::get('/adminlogin', [LoginController::class, 'adminLogin']);
+
+Route::get('/userregister', [RegisterController::class, 'userRegister']);
+
 Route::get('/userlogin', [LoginController::class, 'userLogin']);
 
 

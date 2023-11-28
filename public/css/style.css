@@ -8,17 +8,10 @@
 
 /* CSS to add a single separator line between "Hey, Wadap" and "Logout" */
 .dropdown-menu li:first-child::after {
-<<<<<<< HEAD
-    content: "";
-    display: block;
-    border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
-    margin: 5px 15px; /* Adjust the margin to control the spacing, here 10px on left and right */
-=======
   content: "";
   display: block;
   border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
   margin: 5px 15px; /* Adjust the margin to control the spacing */
->>>>>>> cd07440f538f54f90d3a4b52b8cdfdbbfc22df22
 }
 
 /* CSS to make "Hey, Wadap" unclickable */
@@ -46,21 +39,6 @@ line-height: normal;
 }
 
 .logout-icon {
-<<<<<<< HEAD
-    width: 1em; /* or adjust the size as needed */
-    height: 1em; /* or adjust the size as needed */
-    vertical-align: middle;
-    filter: brightness(0) invert(1);
-    margin-right: 5px; /* Adjust the margin as needed for the desired spacing */
-}
-.modal-body {
-    color: #FFF;
-    font-family: Inter;
-    font-size: 15px;    
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-=======
   width: 1em; /* or adjust the size as needed */
   height: 1em; /* or adjust the size as needed */
   vertical-align: middle;
@@ -108,7 +86,6 @@ line-height: normal;
 
 .modal-footer .btn-dark {
   margin-right: 10px; /* Adjust the margin between buttons */
->>>>>>> cd07440f538f54f90d3a4b52b8cdfdbbfc22df22
 }
 
 .firstbg {

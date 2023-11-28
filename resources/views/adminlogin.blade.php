@@ -13,16 +13,30 @@
         </div>
         <div class="contentbox">
             <div class="formbox">
-               
-                <form>
+
+                {{-- @if (session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+                  {{ session('success') }}
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif --}}
+
+                @if (session()->has('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <p class="mb-5">{{ session('success') }}</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                @endif
+
+                <form action="/adminlogin" method="POST">
+                    @csrf
                     <div class="inputbox">
-                        
-                        <input type="text" name="Username" placeholder="Username or Email">
+                        <input type="text" name="username" class="@error('username') is-invalid @enderror" id="username" placeholder="username" autofocus required>
                     </div>
+
                     <div class="inputbox">
-                        
                         <input type="text" name="Password" placeholder="Password">
                     </div>
+
                     <div class="inputbox">
                         <input type="submit" value="login" name="">
                     </div>

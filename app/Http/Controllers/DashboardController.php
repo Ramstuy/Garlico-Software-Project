@@ -3,31 +3,36 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Order;
 use App\Models\Customer;
+use App\Models\Shipment;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
     function overview()  {
-        $customers = Customer::all();
-    
-    // Calculate the total quantity ordered across all customers
-    $totalQuantityOrdered = $customers->flatMap->orders->sum('quantity_ordered');
-
-    return view('overview', compact('customers', 'totalQuantityOrdered'));
+    $users = User::where('is_admin', 0)->get();
+    // $totalQuantityOrdered = $customers->flatMap->orders->sum('quantity_ordered');
+    $totalOrders = Order::count();
+    $successOrders = Shipment::where('status', 'delivered')->count();
+    $totalUsers = User::where('is_admin', 0)->count();
+    return view ('layouts.overview', compact('users', 'totalOrders', 'successOrders', 'totalUsers'));
     }
     function orders()  {
-        $customers = Customer::all();
-        return view ('orders', compact('customers'));
-    }
-    function shipment()
-    {
         $customers = Customer::with('orders')->get();
-        return view('shipment', compact('customers'));
+        return view ('layouts.orders', compact('customers'));
     }
+    function shipment() {
+    $customers = Customer::with('orders.shipments')->get();
+    // dd($customers);
+    return view('layouts.shipment', compact('customers'));
+    }
+
     function client()  {
+        
         $customers = Customer::all();
-        return view ('client', compact('customers'));
+        return view('layouts.client', compact('customers'));
+        
     }
 }

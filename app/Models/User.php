@@ -21,6 +21,7 @@ class User extends Authenticatable
         'username',
         'email',
         'password',
+        'is_admin'
     ];
     public function customer(){
         return $this->hasOne(Customer::class);

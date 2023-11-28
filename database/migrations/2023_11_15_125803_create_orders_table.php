@@ -16,6 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('customer_id')->nullable();
+            $table->unsignedBigInteger('garlico_id')->nullable();
             $table->integer('quantity_ordered');
             $table->boolean('is_paid')->default(false);
             $table->timestamps();
@@ -23,6 +24,11 @@ class CreateOrdersTable extends Migration
             $table->foreign('customer_id')
                 ->references('id')
                 ->on('customers')
+                ->onDelete('set null');
+
+            $table->foreign('garlico_id')
+                ->references('id')
+                ->on('garlico')
                 ->onDelete('set null');
         });
     }

@@ -21,7 +21,7 @@
                                     </div>
 
                                 <div class="d-flex justify-content-center mb-4">
-                                    <button type="button" class="btn btn-success btn-lg gradient-custom-4 text-body" style="background-color: #2E2E2E; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important;">Login</button>
+                                    <button type="submit" class="btn btn-success btn-lg gradient-custom-4 text-body" style="background-color: #2E2E2E; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important;">Login</button>
                               
                                   </div>
                             

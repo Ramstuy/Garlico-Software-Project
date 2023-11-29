@@ -55,7 +55,7 @@
                                     <td>{{ $customer->customer_name }}</td>
                                     @foreach($customer->orders as $order)
                                                 <td>{{ $order->quantity_ordered }}</td>
-                                                <td>{{ $order->is_paid ? 'Paid' : 'Not Paid' }}</td>
+                                                <td>{{ $order->is_paid ? 'Sudah Dibayar' : 'Belum Dibayar' }}</td>
                                             @endforeach
                                 </tr>
                                 @endforeach

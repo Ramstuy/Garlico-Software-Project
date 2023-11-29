@@ -19,15 +19,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::create([
-            'username'=>'Melercury',
-            'email'=>'melercury@gmail.com',
-            'password'=> bcrypt('54321')
+            'username'=>'unknownuser',
+            'email'=>'unknownuser@gmail.com',
+            'password'=> bcrypt('user123')
         ]);   
 
         Customer::create([
             'user_id'=>'1',
-            'customer_name'=>'Mercury ni dek',
-            'customer_email'=>'melercury@gmail.com',
+            'customer_name'=>'Unknown User',
+            'customer_email'=>'unknownuser@gmail.com',
             'customer_address'=>'Jl. Jalan',
             'phone_number'=>'+628123456789'
         ]);
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
         ]);  
 
         Shipment::create([
-            'status'=>'delivered'
+            'status'=>'shipped'
         ]);    
 
 

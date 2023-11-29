@@ -18,12 +18,12 @@ class Shipment extends Model
         if($value == 'pending'){
             return "Pemesanan sedang diproses";
         } else if($value == 'shipped'){
-            return "Pesanan telah dikirim";
+            return "Pesanan dalam perjalanan";
         } else{
             return "Pesanan telah tiba";
         }
     }
-    public function orders(){
+    public function order(){
         return $this->belongsTo(Order::class, 'order_id');
     }
 }

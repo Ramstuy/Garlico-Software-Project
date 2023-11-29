@@ -14,31 +14,36 @@
         <div class="contentbox">
             <div class="formbox">
 
-                {{-- @if (session()->has('success'))
-                <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
-                  {{ session('success') }}
-                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                @endif --}}
-
                 @if (session()->has('success'))
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <p class="mb-5">{{ session('success') }}</p>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 @endif
 
+                @if (session()->has('loginError'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <p class="mb-5">{{ session('loginError') }}</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                @endif
+
                 <form action="/adminlogin" method="POST">
                     @csrf
                     <div class="inputbox">
-                        <input type="text" name="username" class="@error('username') is-invalid @enderror" id="username" placeholder="username" autofocus required>
+                        <input type="email" name="email" class="@error('email') is-invalid @enderror form-control" id="email" placeholder="email" autofocus required>
                     </div>
+                    @error('email')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
 
                     <div class="inputbox">
-                        <input type="text" name="Password" placeholder="Password">
+                        <input type="password" name="password" class="@error('password') is-invalid @enderror form-control form-control" id="password" placeholder="password" required>
                     </div>
+                    @error('password')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
 
                     <div class="inputbox">
-                        <input type="submit" value="login" name="">
+                        <input type="submit" value="login">
                     </div>
                     <div class="inputbox">
                         <p>Don't have an account?<a href="/adminregister">Sign up</a></p>

@@ -18,19 +18,21 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |
 */
 
-Route::get('/', [MainController::class, 'index']);
+Route::get('/', [MainController::class, 'index'])->name('home');
 
-Route::get('/dashoverview', [DashboardController::class, 'overview']);
-Route::get('/dashorders', [DashboardController::class, 'orders']);
-Route::get('/dashshipment', [DashboardController::class, 'shipment']);
-Route::get('/dashclient', [DashboardController::class, 'client']);
+Route::get('/dashoverview', [DashboardController::class, 'overview'])->name('dashoverview')->middleware('auth');
+Route::get('/dashorders', [DashboardController::class, 'orders'])->name('dashorders')->middleware('auth');
+Route::get('/dashshipment', [DashboardController::class, 'shipment'])->name('dashshipment')->middleware('auth');
+Route::get('/dashclient', [DashboardController::class, 'client'])->name('dashclient')->middleware('auth');
 
 Route::get('/customerorder', [MainController::class, 'customerOrder']);
 
-Route::get('/adminregister', [RegisterController::class, 'adminRegister']);
+Route::get('/adminregister', [RegisterController::class, 'adminRegister'])->middleware('guest');
 Route::post('/adminregister', [RegisterController::class, 'adminStore']);
 
-Route::get('/adminlogin', [LoginController::class, 'adminLogin']);
+Route::get('/adminlogin', [LoginController::class, 'adminLogin'])->middleware('guest');
+Route::post('/adminlogin', [LoginController::class, 'adminAuth']);
+Route::post('/adminlogout', [LoginController::class, 'adminLogout']);
 
 Route::get('/userregister', [RegisterController::class, 'userRegister']);
 

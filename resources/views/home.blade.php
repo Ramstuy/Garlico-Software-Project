@@ -44,28 +44,24 @@
             <div class="card">
                 <img class="card-img-top" src="https://c.animaapp.com/OU2pd5a9/img/the-16-best-things-we-added-to-our-pantry-this-year@2x.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text">Studies have shown that black garlic may help regulate blood sugar levels, reduce the risk of gestational diabetes, and even prevent damage from uncontrolled diabetesr.</p>
                 </div>
             </div>
             <div class="card">
                 <img class="card-img-top" src="https://c.animaapp.com/OU2pd5a9/img/black-garlic-north-america----cooking-with-black-garlic@2x.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text">Black garlic may help reduce certain markers of heart disease, like triglycerides and LDL (bad) cholesterol. It may also increase HDL (good) cholesterol for some people..</p>
                 </div>
             </div>
             <div class="card">
                 <img class="card-img-top" src="https://c.animaapp.com/OU2pd5a9/img/black-garlic-whole-buds---1-lb--1-@2x.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text">The antioxidant and anti-inflammatory qualities of black garlic can repair damaged cells in the body.</p>
                 </div>
             </div>
             <div class="card">
                 <img class="card-img-top" src="https://c.animaapp.com/OU2pd5a9/img/dude--dat-is-a-black-garlic-@2x.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
                     <p class="card-text"> Black garlic is believed to strengthen the immune system and prevent several common bacterial and viral diseases. It also improves the health of the digestive and respiratory systems
                         .</p>
                 </div>

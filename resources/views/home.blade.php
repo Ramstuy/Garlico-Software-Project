@@ -23,7 +23,10 @@
                 <div class="text-white">
                     <h1 class="firstle">DISCOVER OUR PRODUCT</h1>
                     <p class="firstpar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor /n incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                    @if(auth()->check())
                     <a href="#" class="firstbtn mt-2 btn btn-light p-3" role="button">Read More</a>
+                    @else
+                    @endif
                 </div>
             </div>
         </div>

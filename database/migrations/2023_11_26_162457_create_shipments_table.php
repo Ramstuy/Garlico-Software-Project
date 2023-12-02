@@ -16,7 +16,7 @@ class CreateShipmentsTable extends Migration
         Schema::create('shipments', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('order_id')->nullable();
-            $table->enum('status', ['pending', 'shipped', 'delivered']);
+            $table->enum('status', ['pending', 'shipped', 'delivered'])->default('pending');
             $table->timestamps();
 
             $table->foreign('order_id')

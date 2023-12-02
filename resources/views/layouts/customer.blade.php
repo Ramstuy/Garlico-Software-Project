@@ -9,29 +9,14 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
   </head>
-  @yield('stylesheet')
   <body>
-    <style>
-      body {
-            overflow-x: hidden; 
-        }
-
-        .scroll-container {
-            overflow-y: scroll;
-            overscroll-behavior-y: none; 
-        }
-    </style>
     
-    @include('partials.navbar')
+    @include('partials.customerNavbar')
     
-    <div class="scroll-container">
-    
-    @yield('container')
+      @yield('container')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

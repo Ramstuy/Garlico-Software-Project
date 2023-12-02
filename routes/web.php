@@ -20,23 +20,27 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', [MainController::class, 'index'])->name('home');
 
-Route::get('/dashoverview', [DashboardController::class, 'overview'])->name('dashoverview')->middleware('auth');
-Route::get('/dashorders', [DashboardController::class, 'orders'])->name('dashorders')->middleware('auth');
-Route::get('/dashshipment', [DashboardController::class, 'shipment'])->name('dashshipment')->middleware('auth');
-Route::get('/dashclient', [DashboardController::class, 'client'])->name('dashclient')->middleware('auth');
+Route::get('/dashoverview', [DashboardController::class, 'overview'])->name('dashoverview')->middleware('auth', 'admin');
 
-Route::get('/customerorder', [MainController::class, 'customerOrder']);
+Route::get('/dashorders', [DashboardController::class, 'orders'])->name('dashorders')->middleware('auth', 'admin');
+Route::get('/paidstatus/{id}', [DashboardController::class, 'paidStatus'])->name('paidstatus')->middleware('auth', 'admin');
 
-Route::get('/adminregister', [RegisterController::class, 'adminRegister'])->middleware('guest');
-Route::post('/adminregister', [RegisterController::class, 'adminStore']);
+Route::get('/dashshipment', [DashboardController::class, 'shipment'])->name('dashshipment')->middleware('auth', 'admin');
+Route::get('/shipstatus/{id}', [DashboardController::class, 'shipStatus'])->name('shipstatus')->middleware('auth', 'admin');
 
-Route::get('/adminlogin', [LoginController::class, 'adminLogin'])->middleware('guest');
-Route::post('/adminlogin', [LoginController::class, 'adminAuth']);
-Route::post('/adminlogout', [LoginController::class, 'adminLogout']);
+Route::get('/dashclient', [DashboardController::class, 'client'])->name('dashclient')->middleware('auth', 'admin');
 
-Route::get('/userregister', [RegisterController::class, 'userRegister']);
+Route::get('/customerorder', [MainController::class, 'customerOrder'])->middleware('auth');
+Route::post('/customerorder', [MainController::class, 'store']);
 
-Route::get('/userlogin', [LoginController::class, 'userLogin']);
+Route::get('/register', [RegisterController::class, 'register'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/login', [LoginController::class, 'login'])->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
+
 
 
 

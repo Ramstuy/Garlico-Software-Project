@@ -27,11 +27,15 @@
 
     <div class="sidebar-heading text-center py-3 primary-text fs-3 fw-bold text-uppercase border-bottom" style="text-align: left;"></div> 
     
-    <div class="logout mt-auto">
+    <div class="mt-auto list-group-item list-group-item-action bg-transparent second-text">
+        <!-- Apply inline styles to the anchor tag -->
+        <a href="/" style="color: inherit; text-decoration: none;">Back to Home</a>
+    </div>
+    {{-- <div class="logout mt-auto">
     <form action="/adminlogout" method="post">
         @csrf
         <button type="submit" class="list-group-item list-group-item-action bg-transparent second-text"><img class="logout-icon me-4" src="https://i.ibb.co/VQp2hM5/logout-Copy.png" alt="logout-Copy">Logout</button>
     </form>
-    </div>
+    </div> --}}
     
 </div>

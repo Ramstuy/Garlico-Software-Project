@@ -3,15 +3,15 @@
 }  
 
 .dropdown-menu {
+  width: 80px;
   background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha (4th value) for the level of transparency */
 }
 
-/* CSS to add a single separator line between "Hey, Wadap" and "Logout" */
 .dropdown-menu li:first-child::after {
   content: "";
   display: block;
   border-top: 1px solid #ccc; /* Adjust the color and thickness as needed */
-  margin: 5px 15px; /* Adjust the margin to control the spacing */
+  margin: 7px 15px; /* Adjust the margin to control the spacing */
 }
 
 /* CSS to make "Hey, Wadap" unclickable */
@@ -21,6 +21,9 @@
 
 /* CSS to resize the text in the dropdown menu */
 .dropdown-menu li a.dropdown-item {
+  font-size: 14px; /* Adjust the font size as needed */
+}
+.dropdown-menu li button.dropdown-item {
   font-size: 14px; /* Adjust the font size as needed */
 }
 
@@ -33,9 +36,40 @@ font-weight: 300;
 line-height: normal;
 }
 
+.authe {
+  color: #FFF;
+font-family:Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
 .dropdown-item {
     color: #FFF;
     font-family:Poppins;
+}
+
+.username {
+  /* Allow the text to wrap */
+  white-space: normal;
+  /* Restrict to a maximum of 2 lines */
+  max-height: 3em; /* Adjust this value for the number of lines you want to display */
+  overflow: hidden;
+  width: 25%;
+  text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+}
+
+.custom-link {
+  color: inherit; /* Set the text color to inherit from its parent */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Define hover styles if you want to change appearance on hover */
+.custom-link:hover {
+  /* Define the styles you want on hover */
+  /* For example, changing color */
+  color: #FFF; /* Change to the color you prefer */
+  /* You can add other styles like text-decoration or background-color */
 }
 
 .logout-icon {
@@ -530,4 +564,3 @@ word-wrap: break-word
 .footer-right svg {
     fill: white;
 }
-

@@ -29,12 +29,36 @@ class DashboardController extends Controller
         $customers = Customer::with('orders')->get();
         return view ('layouts.orders', compact('customers'));
     }
+
+    function paidStatus($id) {
+        $order = Order::find($id);
+
+        if($order->is_paid == true) {
+            $order->is_paid = false;
+        } else
+        {
+            $order->is_paid = true;
+        }
+        $order->save();
+        return redirect()->back()->with('success', 'Paid status updated!');
+    }
     function shipment() {
     $customers = Customer::with('orders.shipments')->get();
     // dd($customers);
     return view('layouts.shipment', compact('customers'));
     }
 
+    function shipStatus($id) {
+        $shipment = Shipment::find($id);
+
+        if($shipment->getRawOriginal('status') == "pending") {
+            $shipment->status = "shipped";
+        } elseif($shipment->getRawOriginal('status') == "shipped") {
+            $shipment->status = "delivered";
+        }
+        $shipment->save();
+        return redirect()->back()->with('success', 'Shipment status updated!');
+    }
     function client()  {
         
         $customers = Customer::all();

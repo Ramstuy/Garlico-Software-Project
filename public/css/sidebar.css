@@ -1,0 +1,7 @@
+/* This will change the background color on hover */
+a {
+    background-color: transparent;
+}
+a:hover {
+    background-color: rgba(239, 234, 216, 0.1);
+}

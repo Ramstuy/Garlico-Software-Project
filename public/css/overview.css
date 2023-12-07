@@ -4,6 +4,12 @@
   --second-text-color: #bbbec5;
   --second-bg-color: #c1efde;
 }
+tbody, td, tfoot, th, thead, tr {
+  border-color: inherit;
+  border-style: none;
+  border-width: 0;
+}
+
 .p-3 .d-flex > div:first-child {
   margin-right: 10px; /* Sesuaikan margin kanan gambar jika perlu */
 }
@@ -141,17 +147,13 @@
 
   .white-image {
     filter: brightness(0) invert(1);
-}
+  }
 
-.logout-icon {
-  width: 1em; /* or adjust the size as needed */
-  height: 1em; /* or adjust the size as needed */
-  vertical-align: middle;
-  filter: brightness(0) invert(1);
-  margin-right: 5px; /* Adjust the margin as needed for the desired spacing */
-}
-
-
-
-
+  .logout-icon {
+    width: 1em; /* or adjust the size as needed */
+    height: 1em; /* or adjust the size as needed */
+    vertical-align: middle;
+    filter: brightness(0) invert(1);
+    margin-right: 5px; /* Adjust the margin as needed for the desired spacing */
+  }
 }

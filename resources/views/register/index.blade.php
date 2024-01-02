@@ -45,7 +45,4 @@
     </main>
   </div>
 </div>
-<div class="row justify-content-end align-items-end p-4" style="width: 21% !important;">
-  <a href="/">Back to Home</a>
-</div>
 @endsection

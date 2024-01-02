@@ -22,7 +22,7 @@ class CreateShipmentsTable extends Migration
             $table->foreign('order_id')
                 ->references('id')
                 ->on('orders')
-                ->onDelete('set null');
+                ->onDelete('cascade');
         });
     }
 

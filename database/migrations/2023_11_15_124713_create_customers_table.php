@@ -17,9 +17,9 @@ class CreateCustomersTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('customer_name');
-            $table->string('customer_email')->unique();
+            $table->string('customer_email');
             $table->text('customer_address');
-            $table->string('phone_number')->unique();
+            $table->string('phone_number');
             $table->timestamps();
 
             $table->foreign('user_id')

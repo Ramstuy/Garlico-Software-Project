@@ -24,7 +24,8 @@
                     <h1 class="firstle">DISCOVER OUR PRODUCT</h1>
                     <p class="firstpar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor /n incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
                     @if(auth()->check())
-                    <a href="#" class="firstbtn mt-2 btn btn-light p-3" role="button">Read More</a>
+                    {{-- <a href="#" class="firstbtn mt-2 btn btn-light p-3" role="button">Read More</a> --}}
+                    <p class="nowprice">Now Price: Rp. {{ $garlico->price }}</p>
                     @else
                     @endif
                 </div>
@@ -32,7 +33,7 @@
         </div>
     </section>
 
-    <section class="secondbg">
+    <section id="about" class="secondbg">
         <img src="https://c.animaapp.com/OU2pd5a9/img/image-desc@2x.png" alt="garlicosecbg">
         <div class="h-100 container-xxl position-relative">
             <div class="d-flex h-100 align-items-center">
@@ -71,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="thirdbg">
+    <section id="buynow" class="thirdbg">
         <div class="container-fluid">
             <div class="row content-container">
               <div class="col-md-6 image-container">
@@ -80,7 +81,13 @@
               <div class="col-md-6 text-container">
                 <h1 class="thirdle">WHY SHOULD OUR PRODUCTS</h1>
                 <p class="thirdpar">Black garlic is a type of garlic that has been fermented under controlled high-temperature, high-humidity conditions for several weeks. The process of making black garlic is called the Maillard reaction, which involves aging regular garlic bulbs over the course of weeks or months</p>
-                <a href="#" class="firstbtn mt-2 btn btn-light p-3" role="button">Pre Order</a>
+                @if(auth()->check())
+                @if(Auth::user()->is_admin != 1)
+                <a href="{{ route('custorder', ['id'=>Auth::user()->id]) }}" class="firstbtn mt-2 btn btn-light p-3" role="button">Order</a>
+                @endif
+                @else
+                <a href="{{ route('loginpage') }}" class="firstbtn mt-2 btn btn-light p-3" role="button">Login Now!</a>
+                @endif
               </div>
             </div>
           </div>
@@ -139,6 +146,6 @@
                 </div>
               
           </footer>
-   
+    
       </section>
       

@@ -16,7 +16,7 @@ class Shipment extends Model
 
     public function getStatusAttribute($value){
         if($value == 'pending'){
-            return "Pemesanan sedang diproses";
+            return "Pesanan sedang diproses";
         } else if($value == 'shipped'){
             return "Pesanan dalam perjalanan";
         } else{

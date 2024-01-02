@@ -8,7 +8,8 @@
                     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="kards3" >
                             <div class="card-body p-5">
-                                <form action="#" method="post" class="text-white">
+                                
+                                <form action="{{ route('orderdetails') }}" method="post" class="text-white">
                                     @csrf
                                     <div class="form-group mb-4">
                                         <label for="form3Example1cg"style="display: block; text-align: left;">Full Name</label>
@@ -52,18 +53,13 @@
 
                                     <div class="mb-4" style="margin-bottom: 10px;">
                                         <div class="d-flex flex-row">
-                                            <a class="btn btn-success btn-lg gradient-custom-4 text-body" href="{{ route('home') }}" role="button" style="background-color: #2E2E2E; flex: 1; margin-left: 4px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important">Cancel</a>
+                                            <a class="btn btn-success btn-lg gradient-custom-4 text-body" href="{{ route('home') }}" role="button" style="background-color: #2E2E2E; flex: 1; margin-left: 4px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important">Close</a>
                                             <button type="submit" class="btn btn-success btn-lg gradient-custom-4 text-body" style="background-color: #2E2E2E; flex: 1; margin-left: 4px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 1px solid #000; color: white !important;">Submit</button>
                                         </div>
                                     </div>
                                     
-                                    
-                                
                                     </form>
-                                    
-                                    
                                 
-                                </form>                        
                             </div>
                         </div>
                     </div>

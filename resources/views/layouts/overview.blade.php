@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Garlico</title>
+    <link rel="icon" href="https://c.animaapp.com/OU2pd5a9/img/bawang-ireng-lanang-1@2x.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- <link rel="stylesheet" href="/css/overview.css" /> -->
@@ -105,7 +107,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <div class="my-3 p-3 radius bg-white" style="overflow-y: scroll; max-height: 70.7vh;">
+                                    <div class="my-3 p-3 radius bg-white" style="overflow-y: scroll; height: 71.1vh;">
                                         <table class="table table-hover text-center" >
                                             <thead>
                                                 <tr>

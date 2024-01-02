@@ -19,12 +19,13 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('garlico_id')->nullable();
             $table->integer('quantity_ordered');
             $table->boolean('is_paid')->default(false);
+            $table->boolean('is_cancelled')->default(false);
             $table->timestamps();
 
             $table->foreign('customer_id')
                 ->references('id')
                 ->on('customers')
-                ->onDelete('set null');
+                ->onDelete('cascade');
 
             $table->foreign('garlico_id')
                 ->references('id')

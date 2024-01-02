@@ -1,23 +1,23 @@
-<nav class="navbar navbar-expand-lg transparent-navbar fixed-top">
+<nav class="navbar navbar-expand-lg transparent-navbar fixed-top" >
   <div class="container">
     <div class="navbar-brand">
       <img src="https://c.animaapp.com/OU2pd5a9/img/bawang-ireng-lanang-1@2x.png" alt="Bootstrap" width="30%" height="30%">
     </div>
-        <ul class="navbar-nav ml-auto style">
-          <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-2">
-              <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item mx-2">
-              <a class="nav-link" href="#staticBackdrop"  data-bs-toggle="modal">Contact</a>
-          </li>
-          <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Buy Now</a>
-          </li> 
-          @if(auth()->check())
-          <li class="nav-item dropdown">
+    <ul class="navbar-nav ml-auto style">
+        <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item mx-2">
+            <a class="nav-link" href="#buynow">Buy Now</a>
+        </li> 
+    @if(auth()->check())
+      <li class="nav-item mx-2">
+          <a class="nav-link" href="#staticBackdrop"  data-bs-toggle="modal">Contact</a>
+      </li>
+    <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                   <img src="https://c.animaapp.com/OU2pd5a9/img/user@2x.png" alt="Bootstrap" width="25%" height="50%"/>
               </a>
@@ -46,7 +46,7 @@
                   </li>
                   @else
                   <li>
-                    <a class="dropdown-item" href="/customerorder"><i class="bi bi-box2 me-2"></i>Order</i></a>
+                    <a class="dropdown-item" href="{{ route('custorder', ['id'=>Auth::user()->id]) }}"><i class="bi bi-box2 me-2"></i>Order</i></a>
                   </li>
                   <li>
                     @endif
@@ -61,6 +61,7 @@
               </ul>
           </li>
       @else
+      
           <li class="nav-item">
               <a class="nav-link" href="/login">
                   <i class="bi bi-box-arrow-in-right me-2"></i>Login

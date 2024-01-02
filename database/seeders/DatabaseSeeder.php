@@ -19,31 +19,21 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::create([
-            'username'=>'unknownuser',
+            'username'=>'ucokcok',
             'email'=>'unknownuser@gmail.com',
             'password'=> bcrypt('user123')
         ]);   
 
-        Customer::create([
-            'user_id'=>'1',
-            'customer_name'=>'Unknown User',
-            'customer_email'=>'unknownuser@gmail.com',
-            'customer_address'=>'Jl. Jalan',
-            'phone_number'=>'+628123456789'
-        ]);
-
-        Order::create([
-            'customer_id'=>'1',
-            'quantity_ordered'=>'3'
-        ]);    
-        
         Garlico::create([
-            'price'=>10000
+            'price'=>165000,
         ]);  
-
-        Shipment::create([
-            'status'=>'shipped'
-        ]);    
+        
+        User::create([
+            'username'=>'ramstuy',
+            'email'=>'admin@gmail.com',
+            'password'=> bcrypt('admin123'),
+            'is_admin'=>true
+        ]); 
 
 
         // User::create([

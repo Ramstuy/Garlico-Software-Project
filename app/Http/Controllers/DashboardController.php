@@ -42,6 +42,19 @@ class DashboardController extends Controller
         $order->save();
         return redirect()->back()->with('success', 'Paid status updated!');
     }
+
+    function cancelStatus($id) {
+        $order = Order::find($id);
+
+        if($order->is_cancelled == true) {
+            $order->is_cancelled = false;
+        } else
+        {
+            $order->is_cancelled = true;
+        }
+        $order->save();
+        return redirect()->back()->with('success', 'Cancel status updated!');
+    }
     function shipment() {
     $customers = Customer::with('orders.shipments')->get();
     // dd($customers);
